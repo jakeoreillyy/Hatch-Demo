@@ -1,0 +1,352 @@
+[
+ {
+  "ref": "H-01",
+  "title": "ThresholdIQ",
+  "one_liner": "Dynamic free-shipping bar with per-cart math",
+  "example_customer": "US apparel/beauty/supplements DTC brands, $50K-$5M",
+  "wedge": "Bar reads live cart and presents per-cart threshold mathematically tuned to next AOV tier from store order-distribution histogram"
+ },
+ {
+  "ref": "H-02",
+  "title": "LookCart",
+  "one_liner": "Auto-generated Complete the Look from real co-purchase data",
+  "example_customer": "US apparel/beauty/jewellery DTC brands, $100K-$5M",
+  "wedge": "Reads last-90-day actual co-purchase pairs + product image embeddings, auto-publishes 3-product looks per PDP — zero curation labour"
+ },
+ {
+  "ref": "H-03",
+  "title": "FittingRoom3D",
+  "one_liner": "No-3D-model-required AR for apparel: AI generates a wearable 3D mesh from 3 product photos and deploys it to PDP in 24 hours",
+  "example_customer": "apparel/fashion DTC brands, $100K-$5M",
+  "wedge": "Merchant uploads 3 product photos (front, back, side); AI reconstructs a drape-capable 3D garment mesh via generative 3D pipeline and publishes the AR try-on to the PDP within 24 hours — no 3D artist needed."
+ },
+ {
+  "ref": "H-04",
+  "title": "PixelCart",
+  "one_liner": "Vision-grounded \"Shop this look\"",
+  "example_customer": "fashion/home/lifestyle DTC brands, $100K–$1M",
+  "wedge": "GPT-4o vision decomposes any uploaded lifestyle image into structured semantic attributes (garment type, occasion, material, era) and queries the catalogue against those attributes — not feature-vector similarity, actual understanding (\"relaxed linen blazer for spring\") in <2s."
+ },
+ {
+  "ref": "H-05",
+  "title": "CartGenius",
+  "one_liner": "Dynamic bundle rebundler: cart auto-optimizes for best price using Shopify Functions",
+  "example_customer": "apparel/beauty/home DTC brands, $100K–$5M",
+  "wedge": "Uses Shopify Functions Cart Transform API (2024) to automatically detect when a customer's cart qualifies for a bundle discount they haven't applied, then presents a one-click \"rebundle for $X less\" offer — saving the merchant margin while lifting perceived value."
+ },
+ {
+  "ref": "H-06",
+  "title": "Wholesale One",
+  "one_liner": "B2B pricing in 30 minutes, not 3 weeks",
+  "example_customer": "US DTC brands, $500K-$5M",
+  "wedge": "Flat €49/mo includes tiered pricing + tax-exempt flags + MOQ + net-30 invoice link + B2B-only catalog — one app, one price, 30-minute setup from CSV"
+ },
+ {
+  "ref": "H-07",
+  "title": "Bundle Coach / AI Bundle Builder",
+  "one_liner": "Auto-generated bundles from collections",
+  "example_customer": "US beauty/supplements/pet DTC brands, $200K–$1M",
+  "wedge": "Ingests the store's collections + last-90-days order data and auto-generates 5–10 bundle proposals each week — name, copy, hero image stitched from product photos — that the merchant approves via swipe-UI like Tinder."
+ },
+ {
+  "ref": "H-08",
+  "title": "ZeroPage",
+  "one_liner": "AI-matched alternative on OOS & 404 pages",
+  "example_customer": "US fashion/beauty/accessories DTC brands, $50K–$600K",
+  "wedge": "Theme app extension intercepts OOS + 404 pages and renders top-3 in-stock matches as a \"Similar picks\" card scored via lightweight embedding (text-embedding-3-small) — recovering revenue from pages that previously returned €0."
+ },
+ {
+  "ref": "H-09",
+  "title": "CheckoutPulse",
+  "one_liner": "Live social proof in the checkout extension",
+  "example_customer": "US fashion/beauty/home DTC brands, $50K–$800K",
+  "wedge": "Drag-and-drop checkout block rendering \"47 people bought today\" + one pinned 5-star review relevant to the cart SKU + trust badges — pure social proof at the moment before Pay, where trust panic peaks."
+ },
+ {
+  "ref": "H-10",
+  "title": "QuizCart",
+  "one_liner": "Product recommendation quiz embedded inside Shopify checkout extensions, killing Octane AI's $50+ engagement-metered entry",
+  "example_customer": "US apparel/beauty/wellness DTC brands, $100K–$2M",
+  "wedge": "(one sentence):** Move the product-fit quiz from a pre-purchase landing page (where Octane lives) into a Shopify checkout extension widget — so the recommendation happens at peak purchase intent, after a customer has already added to cart but before they complete payment, lifting AOV and reducing post-purchase returns."
+ },
+ {
+  "ref": "H-11",
+  "title": "SessionMind",
+  "one_liner": "Real-time persona engine reshuffling PDP mid-session",
+  "example_customer": "DTC brands, $150K–$750K",
+  "wedge": "Lightweight JS agent builds live behavioral profile from 3 pageviews; hosted small LLM classifies into merchant-defined personas (\"gift-giver\", \"performance seeker\"); PDP swaps hero/CTA/social proof in <300ms — first-time visitor sees a page shaped for them, not a static template."
+ },
+ {
+  "ref": "H-12",
+  "title": "FlashFair",
+  "one_liner": "Randomized flash sale: a mystery discount fires for N minutes, customers must act blind",
+  "example_customer": "fashion/beauty/supplements DTC brands, $100K-$5M",
+  "wedge": "Merchant schedules \"blind flash events\" — at a random moment within a window (e.g., sometime between 2–4pm Tuesday), a site-wide or collection-level mystery discount fires for exactly 15 minutes, announced only by a live storefront banner with no pre-announcement — creating genuine urgency and habitual site check behavior."
+ },
+ {
+  "ref": "H-13",
+  "title": "GuessRight",
+  "one_liner": "Reverse quiz: guess the match, unlock a discount if correct",
+  "example_customer": "apparel/beauty/wellness DTC brands, $100K-$5M",
+  "wedge": "Customer is shown a product and asked to guess the right attribute (ingredient, material, origin, flavor) — if correct, a discount unlocks; if wrong, a recommendation is surfaced. Combines product education with a gamified conversion moment."
+ },
+ {
+  "ref": "H-14",
+  "title": "PageRankReviews",
+  "one_liner": "Lightweight, server-side-rendered review widget that adds zero JavaScript to page load and costs 1/10th of Yotpo",
+  "example_customer": "US apparel/supplements DTC brands, $500K-$5M",
+  "wedge": "(one sentence):** Render review star ratings and the first 5 reviews as native Shopify Liquid/Metafield HTML with zero external JavaScript on page load — full widget defers async only when user scrolls to the reviews section — priced at $29/mo vs. Yotpo's $79/mo."
+ },
+ {
+  "ref": "H-15",
+  "title": "AdProof",
+  "one_liner": "Turns your best review photos + text into ready-to-launch Meta and TikTok ad creatives inside Shopify",
+  "example_customer": "apparel/beauty/wellness DTC brands, $500K–$5M",
+  "wedge": "(one sentence):** Pull your top-rated photo reviews (sorted by photo quality score + star rating), auto-compose them into Meta-formatted static ads and TikTok-formatted video testimonial clips, and push directly to your connected ad account — no agency, no Canva."
+ },
+ {
+  "ref": "H-16",
+  "title": "CommissionKit",
+  "one_liner": "Reviews × Referral: reviewer gets an automatic referral commission code after posting",
+  "example_customer": "fashion/beauty/supplements DTC brands, $100K-$5M",
+  "wedge": "After a 4- or 5-star review is submitted, auto-generate a unique referral code for that customer with a commission (store credit or cash via Shopify Payouts) — every happy reviewer instantly becomes a micro-affiliate."
+ },
+ {
+  "ref": "H-17",
+  "title": "CartCanvas",
+  "one_liner": "Branded cart drawer with \"Your Haul\" share card",
+  "example_customer": "US fashion/beauty/wellness DTC brands, $50K–$500K",
+  "wedge": "A \"Share Your Haul\" button generates a 9:16 PNG mosaic of the cart contents, styled to the brand's aesthetic, with a referral QR — turning every checkout into a Stories-ready brand post."
+ },
+ {
+  "ref": "H-18",
+  "title": "ExchangeUp",
+  "one_liner": "\"While your return is in transit, here's $X to spend now\" store-credit nudge app",
+  "example_customer": "US apparel/footwear DTC brands, $500K–$5M",
+  "wedge": "(one sentence):** Give any Shopify store — not just Loop Advanced subscribers — the ability to issue an instant \"spend-now\" store credit the moment a return label is scanned, with a time-limited \"use within 48 hours\" prompt that drives an immediate second purchase before the refund even processes."
+ },
+ {
+  "ref": "H-19",
+  "title": "Return-to-Resale Router",
+  "one_liner": "Routes every return by rules (condition, reason, current stock, channel margin) into the highest-margin destination — exchange, keep-it discount, liquidation queue, or resale-ready — with a visual mar",
+  "example_customer": "US apparel/footwear/accessories DTC brands, $200K–$2M",
+  "wedge": "Routes every return by rules (condition, reason, current stock, channel margin) into the highest-margin destination — exchange, keep-it discount, liquidation queue, or resale-ready — with a visual margin dashboard showing \"if you'd kept these as resale not refunded: +€2,140 last month.\""
+ },
+ {
+  "ref": "H-20",
+  "title": "FounderVoice",
+  "one_liner": "Cloned-founder voice Q&A on every PDP",
+  "example_customer": "apparel/beauty/supplements DTC brands, $50K-$500K",
+  "wedge": "A 60-second voice-clone onboarding produces a founder voice model; GPT-4o Realtime API answers shopper questions on-page in that voice, grounded in product catalog + brand FAQ."
+ },
+ {
+  "ref": "H-21",
+  "title": "POSReturn Pro",
+  "one_liner": "Shopify POS return UX overhaul with flexible refund-method routing",
+  "example_customer": "apparel/beauty/home DTC brands, $500k-$10M",
+  "wedge": "Replaces the POS return flow with a step-by-step wizard that forces staff to choose refund destination before processing, adds a 2-minute void window, and re-routes loyalty-coupon orders correctly."
+ },
+ {
+  "ref": "H-22",
+  "title": "HybridSave",
+  "one_liner": "\"One-off + Subscribe & Save\" layer that adds a discount toggle to any Shopify product without replacing the checkout",
+  "example_customer": "skincare/pet/candles DTC brands, $100K-$2M",
+  "wedge": "A lightweight widget that adds a \"Subscribe & Save X%\" radio button to any product page; when selected, creates a Shopify selling plan with a discount — no customer portal, no subscription management app, no dunning complexity — just the toggle and the first repeat charge."
+ },
+ {
+  "ref": "H-23",
+  "title": "SubscriptPerk",
+  "one_liner": "Subscription tier with rotating monthly perks using Selling Plans API",
+  "example_customer": "apparel/beauty/supplements DTC brands, $200K-$5M+",
+  "wedge": "Merchants define a \"perk calendar\" — month 1: free sample, month 2: early access, month 3: exclusive colorway — and the app automatically surfaces the current perk via checkout extension and fulfills it alongside the subscription order."
+ },
+ {
+  "ref": "H-24",
+  "title": "ChurnShield",
+  "one_liner": "Subscription × Loyalty: loyalty tier bonuses that activate when a subscriber tries to cancel",
+  "example_customer": "US beauty/supplements/food DTC brands, $500K–$10M+",
+  "wedge": "When a subscriber initiates cancellation, instantly display their loyalty tier, points balance, and a tier-specific win-back offer (\"You're 120 points from Gold status — stay one more month and we'll upgrade you\") — turning the cancel screen into a loyalty upgrade pitch."
+ },
+ {
+  "ref": "H-25",
+  "title": "TrioSocial",
+  "one_liner": "Loyalty × Referral × Gift: the three social-spend levers in one dashboard",
+  "example_customer": "US fashion/beauty/wellness DTC brands, $100K–$5M+",
+  "wedge": "One customer profile shows loyalty tier + referral history + gift card balance; one campaign tool lets merchants run \"refer a friend AND gift them a welcome credit AND earn bonus points\" flows — impossible today without three separate apps."
+ },
+ {
+  "ref": "H-26",
+  "title": "FaireBreak",
+  "one_liner": "Move your stockists off Faire and onto your own direct B2B portal",
+  "example_customer": "EU apparel/beauty/home DTC brands, $500K–$5M",
+  "wedge": "(one sentence):** Strip away Faire's 15% commission by giving Shopify merchants a one-click \"migrate your Faire stockists\" tool — a branded B2B portal that imports existing retailer relationships, sends personalized \"order direct\" invitations, and tracks which buyers have converted off Faire."
+ },
+ {
+  "ref": "H-27",
+  "title": "Replenishment Drawer",
+  "one_liner": "Per-customer replenishment timing",
+  "example_customer": "US skincare/supplements DTC brands, $100K-$1M",
+  "wedge": "Per-customer per-SKU consumption model (LLM seeded with category defaults, refined from observed reorder intervals) sends a \"your moisturiser is almost empty\" SMS at the predicted moment with a one-tap reorder that builds a cart from anything red on the customer's \"vanity shelf.\""
+ },
+ {
+  "ref": "H-28",
+  "title": "RechargeRecovery",
+  "one_liner": "Failed-payment dunning engine for Recharge that goes beyond email to SMS, push, and smart retry sequencing",
+  "example_customer": "US apparel/skincare/pet DTC brands, $100K-$5M+",
+  "wedge": "Intercepts Recharge failed-charge webhooks and runs a smart multi-channel recovery sequence: Visa/MC Account Updater API first, then SMS (Postscript/Klaviyo), then email with payment-update link, then pause-vs-cancel decision based on LTV tier."
+ },
+ {
+  "ref": "H-29",
+  "title": "DunningDesk",
+  "one_liner": "Standalone failed-payment recovery tool for merchants on any subscription app, priced per-save not per-month",
+  "example_customer": "DTC brands, $100K–$2M+",
+  "wedge": "Plug into any subscription app via Shopify webhook; detect failed billing events; run a 7-step smart recovery sequence (email + SMS, escalating with a discount offer at attempt 4); charge a success fee ($1 per recovered subscription) on top of a low monthly base."
+ },
+ {
+  "ref": "H-30",
+  "title": "ScheduleStack",
+  "one_liner": "Shopify Email send-time intelligence: per-segment optimal send-time prediction using first-party open data",
+  "example_customer": "DTC brands, $100k-$10M",
+  "wedge": "Analyzes historical Shopify Email open timestamps per customer segment (VIP, first-time buyers, lapsed) and schedules each campaign cohort to deploy at the predicted peak engagement window — not a batch blast at 10am Tuesday."
+ },
+ {
+  "ref": "H-31",
+  "title": "SMSFlat",
+  "one_liner": "Per-message SMS marketing for sub-$500K stores at a flat monthly cap, not per-send pricing",
+  "example_customer": "DTC brands, sub-$500K",
+  "wedge": "Flat monthly SMS allowance with no per-message surprise billing; pre-built Shopify flows (abandoned cart, shipping update, win-back) that install in one click, designed for a solo-founder who has never run SMS before."
+ },
+ {
+  "ref": "H-32",
+  "title": "CastingCall Live",
+  "one_liner": "Realtime live-video shopping where the merchant streams a product demo and shoppers interrupt with voice questions answered by AI in real time (no extra staff needed)",
+  "example_customer": "fashion/beauty/home DTC brands, $500K–$10M+",
+  "wedge": "Merchant starts a live product stream from Shopify admin; shoppers watch embedded in-store, ask voice or text questions, and an AI layer — grounded in the product catalog — answers immediately without the merchant having to pause their demo."
+ },
+ {
+  "ref": "H-33",
+  "title": "PrivyEscape",
+  "one_liner": "Shopify Email pop-up and list migration tool for merchants leaving Privy's rising-price trap",
+  "example_customer": "DTC brands, $50k–$1M+",
+  "wedge": "Exports all Privy pop-up designs as Shopify-native theme app extensions, maps all Privy email flows to Shopify Email automations, and migrates the subscriber list with suppression-list preservation — complete escape in one workflow."
+ },
+ {
+  "ref": "H-34",
+  "title": "FlowSegment",
+  "one_liner": "Shopify Email automation targeting that breaks the 100-customer Flow loop ceiling",
+  "example_customer": "US apparel/beauty/supplements DTC brands, $500K-$10M",
+  "wedge": "Replaces the broken Flow batching hack with a proper queue-and-drip engine that iterates through any customer segment size, 100 at a time, with de-duplication and retry logic."
+ },
+ {
+  "ref": "H-35",
+  "title": "Catalog-to-Creative",
+  "one_liner": "AI static + video ads from product feed",
+  "example_customer": "US apparel/skincare/home DTC brands, $100K–$1M",
+  "wedge": "The product image is locked as a non-negotiable mask before any generation — diffusion can only change the scene around it, never the product itself — so logos stay intact, prints stay sharp, and every output is paid-ad-ready without retouching."
+ },
+ {
+  "ref": "H-36",
+  "title": "CreativeRack",
+  "one_liner": "AI ad-creative variant generator with one-click Meta launch",
+  "example_customer": "apparel/beauty/home DTC brands, $1K-50K",
+  "wedge": "(one sentence):** Connect to the Shopify product catalog, auto-generate 5 hook/copy/image variants per product using GPT-4o + product photos, then push the winning test directly into Meta Ads Manager with one click — replacing both the creative brief and the media buyer's setup time."
+ },
+ {
+  "ref": "H-37",
+  "title": "AdCreativeQuick",
+  "one_liner": "Repurpose product images into feed ads",
+  "example_customer": "US DTC brands, $100K-$2M",
+  "wedge": "Upload product image → AI picks 3 best crops, adds copy, exports 16:9 + 1:1 + carousel in 15 seconds"
+ },
+ {
+  "ref": "H-38",
+  "title": "SupplyPilot",
+  "one_liner": "Inventory replenishment agent that drafts and sends supplier POs automatically",
+  "example_customer": "DTC brands, $100K-$5M",
+  "wedge": "SupplyPilot watches stock levels vs. a configurable reorder point, calculates the right quantity using 90-day velocity, drafts a professional PO email, shows the merchant a one-click approve/decline screen, and fires the email to the supplier on approval."
+ },
+ {
+  "ref": "H-39",
+  "title": "ListingGuard",
+  "one_liner": "Catalog health agent that audits your Shopify store daily for broken links, missing images, and out-of-policy listings",
+  "example_customer": "DTC brands, $100K-$5M",
+  "wedge": "The agent crawls the merchant's full catalog every night: checks for missing alt text (hurts SEO), broken product images (kills conversions), zero-inventory published products (wastes ad spend), duplicate meta titles (cannibalises SEO), and prices below cost (misconfigured discounts). Sends a morning \"fix list\" with the exact products affected and one-click bulk fixes for common issues."
+ },
+ {
+  "ref": "H-40",
+  "title": "RetailIQ",
+  "one_liner": "Merchant health scorecard + churn prediction",
+  "example_customer": "US DTC brands, $50K-$1M",
+  "wedge": "Weekly 2-minute scorecard with category-normalized benchmarks and AI-flagged 1-2 most impactful metrics to act on"
+ },
+ {
+  "ref": "H-41",
+  "title": "NightWatch",
+  "one_liner": "Competitor price agent that re-prices your SKUs while you sleep",
+  "example_customer": "apparel/fashion/beauty DTC brands, $100K–$5M+",
+  "wedge": "NightWatch is the first fully closed-loop repricing agent for Shopify — it watches competitors, fires the Shopify Admin API price mutation, and emails the merchant a plain-English digest of every change made and why."
+ },
+ {
+  "ref": "H-42",
+  "title": "Birthday & Beyond",
+  "one_liner": "Occasion marketing with beautiful moments",
+  "example_customer": "US apparel/beauty/jewellery DTC brands, $50K-$500K",
+  "wedge": "Six pre-built design-led occasion moments (birthday, first-anniversary, 10th order, year-with-us, lapsed-90, season-opener) — each a fully composed animated card that customers screenshot and share, not a coupon-blast email."
+ },
+ {
+  "ref": "H-43",
+  "title": "Occasion OS",
+  "one_liner": "One-click occasion launches",
+  "example_customer": "US DTC brands, $100K–$500K",
+  "wedge": "Pick \"Mother's Day 2026 — May 10\" from a dropdown and get a complete occasion stack — landing page, countdown, \"shop by recipient\" filter, gift-message capture, delivery-cutoff badge, email/SMS sequence — deployed in 20 minutes with next year pre-filling from this year's results."
+ },
+ {
+  "ref": "H-44",
+  "title": "Unwrap",
+  "one_liner": "Designer gift-wrap templates on the PDP",
+  "example_customer": "US apparel/beauty/home DTC brands, $50K–$400K",
+  "wedge": "25 designer wrap templates (kraft + twine, holographic Y2K, editorial monochrome, botanical pressed, minimal noshi, foil-embossed) — each fully composed on PDP showing the actual product wrapped with the buyer's message hand-rendered, with a 26th template auto-built from the brand's colorway."
+ },
+ {
+  "ref": "H-45",
+  "title": "SupplementStack",
+  "one_liner": "\"Your goal\" ingredient quiz + subscription stacker for wellness DTC stores",
+  "example_customer": "supplements/wellness DTC brands, $200K-$5M",
+  "wedge": "A 4-question goal quiz (energy / sleep / muscle / immunity) that assembles a personalized supplement protocol from the store's catalog, with subscription-plan pricing embedded in the recommendation — capturing the \"what should I take?\" question that supplement buyers Google before abandoning DTC."
+ },
+ {
+  "ref": "H-46",
+  "title": "Fit-Me",
+  "one_liner": "AI size recommender for apparel under $500K",
+  "example_customer": "US apparel/lingerie DTC brands, $50K–$500K",
+  "wedge": "Customer enters height/weight/usual brand → app returns a confidence-scored size recommendation computed from the store's actual sold-order/exchange data — not a generic chart, the merchant's own data become the brand-specific fit model."
+ },
+ {
+  "ref": "H-47",
+  "title": "GorgiasLite",
+  "one_liner": "$19/mo Shopify helpdesk for stores under $1M rev that Gorgias prices out",
+  "example_customer": "DTC brands, sub-$1M",
+  "wedge": "Flat monthly price with unlimited tickets (within reasonable fair-use cap), Shopify order lookup in sidebar, canned responses, and basic macros — no AI upsells, no per-ticket surprises."
+ },
+ {
+  "ref": "H-48",
+  "title": "TrackReply",
+  "one_liner": "Customer service agent that auto-resolves \"where is my order?\" tickets 24/7",
+  "example_customer": "DTC brands, $50K-$2M",
+  "wedge": "Connects to Shopify Orders + carrier tracking APIs; when a customer emails/DMs \"where is my order?\" the agent looks up their order, checks live tracking, drafts a personalised reply with the exact status and ETA, and sends it — with zero human in the loop for standard WISMO cases."
+ },
+ {
+  "ref": "H-49",
+  "title": "Restock OS",
+  "one_liner": "Wishlist + back-in-stock + preorder unified",
+  "example_customer": "US apparel/footwear/home DTC brands, $200K–$3M",
+  "wedge": "One PDP widget auto-chooses between Save / Notify / Pre-order based on inventory state — turning three apps merchants already pay for separately into a single unified \"demand inbox\" that broadcasts when stock lands."
+ },
+ {
+  "ref": "H-50",
+  "title": "HabitatKit",
+  "one_liner": "Species-specific setup builder for reptile stores",
+  "example_customer": "US reptile DTC brands, $75K–$600K",
+  "wedge": "\"Build My Habitat\" wizard — species → enclosure size → experience level — surfaces correct enclosure, substrate, UVB fixture at right wattage, supplements as real SKUs with one-click \"Add Full Kit\" purchase."
+ }
+]

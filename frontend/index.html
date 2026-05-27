@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hatch105 · Idea Ranker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wordmark">Happy Stack Labs</div>
+      <div class="header-meta">Idea Ranking System</div>
+    </header>
+
+    <main>
+      <!-- Upload -->
+      <div class="upload-zone" id="uploadZone">
+        <input type="file" id="fileInput" accept=".csv,.json" />
+        <div class="upload-icon">⊕</div>
+        <h3>Upload new theses</h3>
+        <p>DROP A .CSV OR .JSON FILE — SCORES AND RE-RANKS THE FULL SET</p>
+      </div>
+
+      <!-- Status -->
+      <div class="status" id="status">
+        <div class="spinner" id="spinner"></div>
+        <span id="statusText"></span>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats" id="stats" style="display: none">
+        <div class="stat">
+          <div class="stat-label">Total Ideas</div>
+          <div class="stat-value" id="statTotal">—</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">Top Score</div>
+          <div class="stat-value" id="statTop">—</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">Avg Score</div>
+          <div class="stat-value" id="statAvg">—</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">New This Run</div>
+          <div class="stat-value" id="statNew">—</div>
+        </div>
+      </div>
+
+      <!-- Podium -->
+      <div class="podium" id="podium" style="display: none">
+        <div class="table-header">
+          <div class="table-title">Podium</div>
+        </div>
+        <div class="podium-stage" id="podiumStage"></div>
+      </div>
+
+      <!-- Table -->
+      <div class="table-header">
+        <div class="table-title">Ranked Ideas</div>
+        <div class="count-badge" id="countBadge"></div>
+      </div>
+
+      <div class="thesis-list" id="thesisList">
+        <div class="empty">Loading theses...</div>
+      </div>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
